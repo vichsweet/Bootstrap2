@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Assustador</title>
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+
+        /* Navbar personalizada */
+        .navbar {
+            background-color: #ff7518; /* Laranja de Halloween */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffeb3b !important;
+        }
+
+        /* Seções com fundo escuro e laranja */
+        section {
+            padding: 60px 0;
+        }
+
+        #sobre {
+            background-color: #333;
+        }
+
+        #festas {
+            background-color: #4f4f4f;
+        }
+
+        #galeria {
+            background-color: #2c2c2c;
+        }
+
+        #contato {
+            background-color: #ff7518; /* Laranja de Halloween */
+        }
+
+        /* Estilo de card */
+        .card {
+            background-color: #333;
+            border: 2px solid #ff7518;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #ffeb3b;
+        }
+
+        .card-img-top {
+            border-radius: 10px;
+        }
+
+        /* Imagens com bordas arredondadas */
+        .img-thumbnail {
+            border-radius: 15px;
+        }
+
+        /* Formulário */
+        .form-control {
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 1rem;
+            background-color: #555;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #ff7518;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff5722;
+        }
+
+        /* Tabela */
+        table {
+            background-color: #333;
+            color: #fff;
+        }
+        table th, table td {
+            text-align: center;
+            padding: 15px;
+        }
+        table th {
+            background-color: #ff7518;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Halloween Assustador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#festas">Festas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="container text-center">
+            <h2 class="mb-4">Sobre o Halloween</h2>
+            <p>O Halloween, também conhecido como o Dia das Bruxas, é uma das festas mais famosas do mundo, celebrada anualmente no dia 31 de outubro. As tradições incluem fantasias assustadoras, doces ou travessuras e decoração temática com abóboras e fantasmas. Vamos explorar esse evento aterrorizante!</p>
+        </div>
+    </section>
+
+    <!-- Seção Festas -->
+    <section id="festas">
+        <div class="container text-center">
+            <h2 class="mb-4">Festas de Halloween</h2>
+            <p>Confira algumas das festas de Halloween mais populares e aterrorizantes ao redor do mundo!</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250?text=Festa+1" class="card-img-top" alt="Festa 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Festa em Nova York</h5>
+                            <p class="card-text">A maior festa de Halloween dos Estados Unidos, com desfiles, música e fantasias incríveis!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250?text=Festa+2" class="card-img-top" alt="Festa 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Festa em Los Angeles</h5>
+                            <p class="card-text">Em LA, o Halloween ganha um toque cinematográfico com festas temáticas de filmes de terror.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250?text=Festa+3" class="card-img-top" alt="Festa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Festa em Londres</h5>
+                            <p class="card-text">Festas de Halloween com eventos góticos e inspirados em filmes de terror clássicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria">
+        <div class="container text-center">
+            <h2 class="mb-4">Galeria Assustadora</h2>
+            <p>Veja algumas das imagens mais assustadoras para entrar no clima do Halloween!</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x250?text=Imagem+1" class="img-thumbnail" alt="Imagem 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x250?text=Imagem+2" class="img-thumbnail" alt="Imagem 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x250?text=Imagem+3" class="img-thumbnail" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container text-center">
+            <h2 class="mb-4">Entre em Contato</h2>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nome" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Link para os scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body
